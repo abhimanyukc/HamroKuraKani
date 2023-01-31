@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="start"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SettingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/primary_purple"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/spartan_bold"
+            android:paddingStart="@dimen/_8sdp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_8sdp"
+            android:text="Edit Profile"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/save"
+
+            android:background="@drawable/round_black_shape2"
+            android:padding="5.00dp"
+            android:layout_margin="10.00dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:gravity="center"
+            app:tint = "@color/white"
+
+            />
+    </LinearLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_image"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:src="@drawable/profile"
+        android:layout_marginBottom="@dimen/_14sdp"
+        app:civ_border_color="@color/primary_purple"
+        app:civ_border_width="@dimen/_2sdp"
+        />
+
+    <EditText
+        android:id="@+id/setting_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+
+        android:fontFamily="@font/spartan_regular"
+        android:background="@drawable/edtprofile_shape"
+        android:gravity="start"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        android:text="User Name" />
+
+    <EditText
+        android:id="@+id/setting_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:background="@drawable/edtprofile_shape"
+        android:gravity="start"
+        android:padding="@dimen/_8sdp"
+        android:fontFamily="@font/spartan_thin"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="normal"
+        android:text="Hey there i am using this ChatApp" />
+
+
+
+</LinearLayout>
